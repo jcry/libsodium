@@ -10,7 +10,7 @@ check_system(){
 	if [[ "${release}" = "debian" || "${release}" = "ubuntu" ]]; then
 		 echo -e "${Info} system is ${release} " && apt-get update && apt-get install -y build-essential
 	elif [[ "${release}" = "CentOS" ]]; then
-		 echo -e "${Info} system is CentOS " && yum update && yum install -y zip && yum groupinstall -y "Development Tools"
+		 echo -e "${Info} system is CentOS " && yum update && yum groupinstall -y "Development Tools"
 	else echo -e "${Error} not support system !" && exit 1
 	fi
 }
