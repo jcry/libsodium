@@ -4,9 +4,9 @@ Info="${Green_font}[Info]${Font_suffix}"
 Error="${Red_font}[Error]${Font_suffix}"
 
 check_system(){
-	[[ ! -z cat /etc/issue | grep -E -i "debian" ]] && release="debian"
-	[[ ! -z cat /etc/issue | grep -E -i "ubuntu" ]] && release="ubuntu"
-	[[ ! -z cat /etc/redhat-release | grep -E -i "CentOS" ]] && release="CentOS"
+	[[ ! -z `cat /etc/issue | grep -E -i "debian"` ]] && release="debian"
+	[[ ! -z `cat /etc/issue | grep -E -i "ubuntu"` ]] && release="ubuntu"
+	[[ ! -z `cat /etc/redhat-release | grep -E -i "CentOS"` ]] && release="CentOS"
 	if [[ "${release}" = "debian" || "${release}" = "ubuntu" ]]; then
 		 echo -e "${Info} system is ${release} " && apt-get update && apt-get install -y build-essential
 	elif [[ "${release}" = "CentOS" ]]; then
