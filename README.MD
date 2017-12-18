@@ -4,8 +4,10 @@
 [![author](https://github.com/nanqinlang/SVG/blob/master/author-nanqinlang-lightgrey.svg)](https://github.com/nanqinlang-script/libsodium)
 [![license](https://github.com/nanqinlang/SVG/blob/master/license-GPLv3-orange.svg)](https://github.com/nanqinlang-script/libsodium)
 
-## script
-made by @nanqinlang
+## main
+contributed by **@nanqinlang**
+
+to execute it with platform `Debian` `Ubuntu` `CentOS`
 
 usage:
 ```bash
@@ -14,4 +16,4 @@ bash libsodium.sh
 ```
 
 ## according
-https://sometimesnaive.org
+https://sometimesnaive.org/article/linux/bash/libsodium.html
