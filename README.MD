@@ -16,4 +16,4 @@ bash libsodium.sh
 ```
 
 ## according
-https://sometimesnaive.org/article/linux/bash/libsodium.html
+https://sometimesnaive.org/article/linux/technique/libsodium
